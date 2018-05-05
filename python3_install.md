@@ -1,0 +1,22 @@
+#在Linux上安装Python3  
+centos 6.5 自带的Python是2.6  
+	# python -V  
+	Python 2.6.6  
+centos 7 没去验证  
+在centos 6下安装Python3:  
+1.安装 gcc:  
+	# yum install gcc -y  
+2.在Python官网下载源码包:  
+	# cd /usr/local/src/  
+	# wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tgz  
+3.解压:  
+	# tar xzvf Python-3.6.4.tgz -C /usr/local/  
+	# ln -s /usr/local/Python-3.6.4.tgz /usr/local/python3  
+4.安装:  
+	# cd /usr/local/python3 && ./configure && make && make install  
+5.添加软链接到usr/bin 可以不用覆盖原来的Python:  
+	# ln -s /usr/local/python36/bin/python3 /usr/bin/python3  
+6.修改环境变量:  
+	# export PATH=$PATH:/usr/local/python3/bin  
+	# source ~/.bashrc  
+7.python3 -V 查看Python的版本信息  
