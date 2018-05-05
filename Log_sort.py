@@ -1,7 +1,7 @@
 # encoding: utf-8
 file = open('access.txt', 'rt')
 log_file = open('log.txt', 'wt')
-tittle = '|{:<10s}|{:<20s}|{:<5s}|{:<5s}|'.format('ip', 'url', 'code', 'count')
+tittle = '|{:<15s}|{:<23s}|{:<4s}|{:<4s}|'.format('ip', 'url', 'code', 'count')
 print(tittle)
 dict_log = {}
 for line in file:
@@ -10,7 +10,7 @@ for line in file:
     dict_log[tp_line] = dict_log.setdefault(tp_line, 0) + 1
 dict_list = list(dict_log.items())
 for i in range(10):
-    for j in range(len(dict_list) - 1):
+    for j in range(len(dict_list)-1-i):
         if dict_list[j][1] > dict_list[j+1][1]:
             dict_list[j], dict_list[j+1] = dict_list[j+1], dict_list[j]
 for key, value in dict_list[-1:-11:-1]:
