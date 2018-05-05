@@ -1,24 +1,25 @@
-#ÔÚLinuxÉÏ°²×°Python3
-centos 6.5 ×Ô´øµÄPythonÊÇ2.6
+#åœ¨Linuxä¸Šå®‰è£…Python3
+centos 6.5 è‡ªå¸¦çš„Pythonæ˜¯2.6
 	# python -V
 	Python 2.6.6
-centos 7 Ã»È¥ÑéÖ¤
-ÔÚcentos 6ÏÂ°²×°Python3£º
-1.°²×° gcc£º
+centos 7 æ²¡å»éªŒè¯
+åœ¨centos 6ä¸‹å®‰è£…Python3ï¼š
+1.å®‰è£… gccï¼š
 	# yum install gcc -y
-2.ÔÚPython¹ÙÍøÏÂÔØÔ´Âë°ü£º
+2.åœ¨Pythonå®˜ç½‘ä¸‹è½½æºç åŒ…ï¼š
 	# cd /usr/local/src/
 	# wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0a1.tgz
-3.½âÑ¹£º
-	# tar xzvf Python-3.6.4.tgz -C /usr/local/python3
-4.°²×°£º
+3.è§£å‹ï¼š
+	# tar xzvf Python-3.6.4.tgz -C /usr/local/
+	# ln -s /usr/local/Python-3.6.4.tgz /usr/local/python3
+4.å®‰è£…ï¼š
 	# cd /usr/local/python3 && ./configure && make && make install
-5.Ìí¼ÓÈíÁ´½Óµ½usr/bin ¿ÉÒÔ²»ÓÃ¸²¸ÇÔ­À´µÄPython£º
+5.æ·»åŠ è½¯é“¾æ¥åˆ°usr/bin å¯ä»¥ä¸ç”¨è¦†ç›–åŸæ¥çš„Pythonï¼š
 	# ln -s /usr/local/python36/bin/python3 /usr/bin/python3
-6.ĞŞ¸Ä»·¾³±äÁ¿£º
+6.ä¿®æ”¹ç¯å¢ƒå˜é‡ï¼š
 	# export PATH=$PATH:/usr/local/python3/bin
-	# source .bashrc
-7.python3 -V ²é¿´PythonµÄ°æ±¾ĞÅÏ¢
+	# source ~/.bashrc
+7.python3 -V æŸ¥çœ‹Pythonçš„ç‰ˆæœ¬ä¿¡æ¯
 	
 	
 	
