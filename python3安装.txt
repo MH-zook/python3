@@ -8,7 +8,7 @@ centos 7 没去验证
 	# yum install gcc -y
 2.在Python官网下载源码包：
 	# cd /usr/local/src/
-	# wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0a1.tgz
+	# wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tgz
 3.解压：
 	# tar xzvf Python-3.6.4.tgz -C /usr/local/
 	# ln -s /usr/local/Python-3.6.4.tgz /usr/local/python3
