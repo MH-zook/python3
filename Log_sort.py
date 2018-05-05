@@ -1,4 +1,4 @@
-# encoding: utf-8
+#coding: utf-8
 file = open('access.txt', 'rt')
 log_file = open('log.txt', 'wt')
 tittle = '|{:<20s}|{:<50s}|{:<8s}|{:<8s}|'.format('ip', 'url', 'code', 'count')
@@ -11,6 +11,7 @@ for line in file:
 dict_list = list(dict_log.items())
 dict_list.sort(key=lambda x: x[1])
 '''
+#排序和匿名函数混合双打
 def sort_list(l, key):
     for i in range(10):
         for j in range(len(l) - 1 - i):
