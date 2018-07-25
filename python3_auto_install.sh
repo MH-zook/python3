@@ -27,7 +27,8 @@ cd /usr/local/src/
 tar xzvf Python-3.6.4.tgz -C /usr/local/
 cd /usr/local/Python-3.6.4 && ./configure --prefix=/usr/local/python3 && make && make install
 check_error
-#ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
 export PATH=$PATH:/usr/local/python3/bin
 check_error
 source ~/.bashrc
